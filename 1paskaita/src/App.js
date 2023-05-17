@@ -23,14 +23,26 @@ function App() {
 }
 
 export default App;*/
+import React from "react";
 import "./App.css";
+import FuncDiv from "./components/FuncDiv";
+import FuncButton from "./components/FuncButton";
+import ClassButton from "./components/ClassButton";
+import ClassDiv from "./components/ClassDiv";
+
+function App() {
+  return (
+    <div>
+      <FuncDiv title="Spausk mane" />
+      <FuncButton title="O Ho Ho" />
+      <ClassDiv title="Oi Oi Oi" />
+      <ClassButton title="Na, kas dabar?" />
+    </div>
+  );
+}
 
 // importai viršuje
-import FuncButton from "./components/FuncButton";
-import FuncDiv from "./components/FuncDiv";
-function App() {
-  return <FuncDiv FuncButton title="Spausk mane" />;
-}
+/*import FuncButton from "./components/FuncButton";*/
 // apibrėžiam komponento pavadinimą, visada didžioji raidė.
 // geroji praktika: Failo pavadinimas toks pat kaip komponento pavadinimas
 /*function App() {
