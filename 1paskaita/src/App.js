@@ -31,6 +31,7 @@ import ClassButton from "./components/ClassButton";
 import ClassDiv from "./components/ClassDiv";
 import Card from "./components/Card";
 import "./Card.css";
+import Products from "./components/Products";
 
 function App() {
   return (
@@ -53,6 +54,9 @@ function App() {
         title="Monkey"
         subtitle="Monkey with strange faces"
       />
+      <br />
+      <br />
+      <Products />
     </div>
   );
 }
