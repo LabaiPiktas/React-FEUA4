@@ -5,6 +5,10 @@ import Counter from "./components/Counter";
 import "./App.css";
 import FuncCounter from "./components/FuncCounter";
 import ClassCounter from "./components/ClassCounter";
+import Hero from "./components/Hero";
+import Button from "./components/Button";
+import MoodChecker from "./components/MoodChecker";
+
 const App = () => {
   return (
     <div>
@@ -30,6 +34,27 @@ const App = () => {
       <br />
       <br />
       <ClassCounter />
+      <br />
+      <br />
+      <br />
+      <div>
+        <Hero
+          title="Užeik, užeik, svečias būsi."
+          subtitle="Jei alaus 'pastatysi'- šeiminiku tapsi."
+        />
+      </div>
+      <br />
+      <br />
+      <div>
+        <Button title="TEXT" variant="text" />
+        <Button title="CONTAINED" variant="contained" />
+        <Button title="OUTLINED" variant="outlined" />
+      </div>
+      <br />
+      <br />
+      <div>
+        <MoodChecker />
+      </div>
     </div>
   );
 };

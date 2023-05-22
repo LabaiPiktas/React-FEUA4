@@ -32,6 +32,7 @@ import ClassDiv from "./components/ClassDiv";
 import Card from "./components/Card";
 import "./Card.css";
 import Products from "./components/Products";
+import Avatar from "./components/Avatar";
 
 function App() {
   return (
@@ -54,6 +55,13 @@ function App() {
         title="Monkey"
         subtitle="Monkey with strange faces"
       />
+      <br />
+      <br />
+      <div>
+        <Avatar name="Teodoras Gulbis" />
+        <Avatar name="princesė Diana" />
+        <Avatar name="retas paukštis" />
+      </div>
       <br />
       <br />
       <Products />
