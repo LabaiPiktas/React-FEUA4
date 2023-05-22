@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const MoodChecker = () => {
   const [message, setMessage] = useState("Kaip jaučiatės?");
