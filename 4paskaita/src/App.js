@@ -11,9 +11,15 @@ function App() {
         image={GolfCalendar}
         title={
           <>
-            Volkswagen GOLF MK2 <br />
-            2022 Calendar <CircumIcon name="square_chev_left" />
-            <CircumIcon name="square_chev_right" />
+            Volkswagen GOLF MK2
+            <span className="icon-left">
+              <CircumIcon name="square_chev_left" />
+            </span>
+            <span className="icon-right">
+              <CircumIcon name="square_chev_right" />
+            </span>
+            <br />
+            2022 Calendar
           </>
         }
         price="10.00€"
@@ -21,7 +27,8 @@ function App() {
           <div>
             12 unique designs. <br />
             <br />
-            All pieces are printed on heavyweight 200 gsm art paper. <br />
+            All pieces are printed on heavyweight 200 gsm <br />
+            art paper. <br />
             <br />
             Limited to 50 pieces. <br />
             <br />
