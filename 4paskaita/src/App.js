@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import "./components/Product.css";
 import Product from "./components/Product";
 import GolfCalendar from "./GolfCalendar.jpg";
 import CircumIcon from "@klarr-agency/circum-icons-react";

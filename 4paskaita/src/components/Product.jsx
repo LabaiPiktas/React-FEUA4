@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button";
-import "./Product.css"
+import "./Button.css";
+import "./Product.css";
 
 const Product = ({
   image,
@@ -28,17 +29,23 @@ const Product = ({
       <div className="image-container">
         <img src={image} alt={title} />
       </div>
-      <div className="info-container">
+      <div className="content-container">
         <h3>{title}</h3>
-        <p>{price}</p>
+        <p className="price">{price}</p>
         <p>{description}</p>
         <p>{availability}</p>
         <div className="quantity-container">
-          <button onClick={decreaseQuantity}>-</button>
-          <p>Quantity: {quantity}</p>
-          <button onClick={increaseQuantity}>+</button>
+          <div className="quantity-controls">
+            <button onClick={decreaseQuantity}>-</button>
+            <p> {quantity} </p>
+            <button onClick={increaseQuantity}>+</button>
+          </div>
+          <Button
+            title="Add to Cart"
+            variant="contained"
+            className="add-to-cart-button"
+          />
         </div>
-        <Button title="Add to Cart" variant="contained" />
         <p>{category}</p>
       </div>
     </div>
