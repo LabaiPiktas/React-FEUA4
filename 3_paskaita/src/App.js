@@ -14,7 +14,7 @@ function App() {
         <Button title="contained" variant="contained" />
         <Button title="outlined" variant="outlined" />
       </div>
-      <hr />
+      <br />
       <div className="mg-t-30 flex-box">
         <MoodChecker />
       </div>
