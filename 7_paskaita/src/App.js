@@ -7,7 +7,7 @@ const App = () => {
     <div>
       <h1>My App</h1>
       <RandomPhotos />
-      <MyComponent name="John" age={25} />
+      <MyComponent />
     </div>
   );
 };
