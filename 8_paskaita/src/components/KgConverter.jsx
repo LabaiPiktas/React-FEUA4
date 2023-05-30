@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import "../components/KgConverter.css"
 
 function KgConverter() {
@@ -40,8 +39,6 @@ function KgConverter() {
   );
 }
 
-KgConverter.propTypes = {
-    kilograms: PropTypes.string,
-  };
+
 
 export default KgConverter;
