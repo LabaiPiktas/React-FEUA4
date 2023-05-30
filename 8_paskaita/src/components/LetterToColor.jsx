@@ -9,7 +9,7 @@ function LetterToColor() {
     const inputValue = e.target.value;
     setText(inputValue);
   };
-const getBackgruondColor = (textLength) => {
+const getBackgroundColor = (textLength) => {
   if (textLength < 3) {
     return 'white';
   } else if (textLength < 6) {
@@ -20,7 +20,7 @@ const getBackgruondColor = (textLength) => {
    return 'red';
   }
 }
-  const backgroundColor = getBackgruondColor(text.length);
+  const backgroundColor = getBackgroundColor(text.length);
 
   
 
