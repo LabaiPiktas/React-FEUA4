@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import HeroImage from './HeroImage';
+import './Users.css';
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -11,17 +13,20 @@ const Users = () => {
   }, []);
 
   return (
-    <div>
+    <div className="hero">
+      <div className="hero-image">
+        <HeroImage />
+      </div>
       <h1>Users Page</h1>
-      <ul>
+      <div className="users-cards">
+        
         {users.map((user) => (
-          <li key={user.id}>
-            <Link to={`/user/${user.id}`}>
-              {user.name} - {user.email}
-            </Link>
-          </li>
+          <Link to={`/user/${user.id}`} key={user.id} className="users-card">
+            <h3>{user.name}</h3>
+            
+          </Link>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
