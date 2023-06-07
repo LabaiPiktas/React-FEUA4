@@ -1,6 +1,6 @@
 import React from "react";
-import "./Main.css";
-import HeroImage from "./img/rhondak.jpg";
+import "./Main.css"
+import HeroImage from "./HeroImage";
 
 const Main = () => {
   return (

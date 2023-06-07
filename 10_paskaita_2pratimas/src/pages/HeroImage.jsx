@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from './pages/img/rhondak.jpg';
+import heroImage from './img/rhondak.jpg';
 
 const HeroImage = () => {
   return <img src={heroImage} alt="Hero" />;
