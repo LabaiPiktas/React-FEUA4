@@ -1,47 +1,30 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
-} from "react-router-dom";
-import Main from "./pages/Main";
-import Users from "./pages/Users";
-import User from "./pages/User";
-import { UserContext } from "./UserContext";
-
-const Topbar = () => {
-  return (
-    <div className="topbar">
-      <NavLink exact to="/" activeClassName="active">
-        Main
-      </NavLink>
-      <NavLink to="/users" activeClassName="active">
-        Users
-      </NavLink>
-    </div>
-  );
-};
-
-const Footer = () => {
-  return <div className="footer">Footer</div>;
-};
+import React, { useEffect, useState } from 'react';
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
+import Topbar from './Topbar';
+import Footer from './Footer';
+import Home from './pages/Home';
+import Page1 from './pages/Page1';
+import Page2 from './pages/Page2';
+import Page3 from './pages/Page3';
+import User from './pages/User';
+import Users from './pages/Users';
+import Main from './Main';
 
 const App = () => {
-  const userContextValue = "Some value";
-
   return (
-    <UserContext.Provider value={userContextValue}>
-      <Router>
-        <Topbar />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/users" element={<Users />} />
-          <Route path="/user/:id" element={<User />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </UserContext.Provider>
+    <div>
+      <Topbar />
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/user/:id" element={<User />} />
+        <Route path="/page1" element={<Page1 />} />
+        <Route path="/page2" element={<Page2 />} />
+        <Route path="/page3" element={<Page3 />} />
+        <Route path="/*" element={<Navigate to="/" />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 };
 

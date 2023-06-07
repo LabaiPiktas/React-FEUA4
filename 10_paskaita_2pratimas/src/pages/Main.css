@@ -1,0 +1,15 @@
+/* Main.css */
+  
+.hero {
+    width: 100%; /* Set the width to 100% to occupy the full width of the container */
+    height: 400px; /* Set the desired height for the hero image */
+    object-fit: cover;
+  }
+  
+  @media (min-width: 1200px) {
+    /* Apply styles for wide PC monitors with a minimum width of 1200px */
+    .hero {
+      height: 600px; /* Adjust the height for wide PC monitors */
+    }
+  }
+  
