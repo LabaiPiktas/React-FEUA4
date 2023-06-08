@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import HeroImage from './HeroImage';
-import './User.css';
+import HeroImage from '../../components/HeroImage';
+import './SingleUser.css';
 
-const User = () => {
+const SingleUser = () => {
   const { id } = useParams();
   const [user, setUser] = useState(null);
 
@@ -45,4 +45,4 @@ const User = () => {
   );
 };
 
-export default User;
+export default SingleUser;

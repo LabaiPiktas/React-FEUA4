@@ -5,13 +5,16 @@ body {
 
 
 .hero {
-    position: relative; 
+    position: relativea; 
   }
   
   .hero img {
-    width: 100%;
+    width: 99vw;
     height: 84vh;
-   
+    object-fit: cover;
+    margin-top: -32px;
+    margin-left: -32px;
+    
   }
   
   .hero-text {
@@ -33,7 +36,7 @@ body {
     font-size: 32px;
     text-align: center;
     display: block;
-    margin-top: 20px; /* Add a margin-top to create space below the heading */
+    margin-top: 20px; 
   }
   
   

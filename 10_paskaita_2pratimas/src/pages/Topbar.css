@@ -9,10 +9,11 @@
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
-    transition: color 0.3s; /* Add a transition for smooth color change */
+    transition: color 0.3s; 
+    font-size: larger;
   }
   
   .topbar a:hover {
-    color: #00ff00; /* Change the color on hover */
+    color: #00ff00; 
   }
   
