@@ -6,13 +6,13 @@ const Topbar = () => {
   return (
     <nav className="navigation">
       <div>Logo</div>
-      <div>
+      <div className="topbar">
         <Link to={MAIN_ROUTE}>Home</Link>
       </div>
-      <div>
+      <div className="topbar">
         <Link to={CONTACTS_ROUTE}>Contacts</Link>
       </div>
-      <div>
+      <div className="topbar">
         <Link to={USERS_ROUTE}>Users</Link>
       </div>
     </nav>

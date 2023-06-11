@@ -15,8 +15,10 @@ const SingleUser = () => {
 
   return (
     <div className="user">
-      <HeroImage />
-      <h2>User Page</h2>
+       <div className="hero-image">
+        <HeroImage />
+      </div>
+      <h1>User Page</h1>
       {user && (
         <div className="user-card">
           <p className="user-info-label">User ID:</p>
