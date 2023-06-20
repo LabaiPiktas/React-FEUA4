@@ -22,7 +22,7 @@ const colorStyles = {
     textColor: 'black',
   },
   azure: {
-    background: '#44bcd8',
+    background: '#00ffff',
     textColor: 'black',
   },
   white: {
@@ -53,7 +53,7 @@ export const StyledCardHeader = styled.h5`
 `;
 
 export const StyledDivider = styled.div`
-  height: 2px;
+  height: 1px;
   background-color: rgba(0, 0, 0, 0.5);
   margin: 16px 0;
 `;
