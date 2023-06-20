@@ -1,37 +1,70 @@
-import { styled } from "styled-components";
+import styled from 'styled-components';
 
-// Define your colors
-const primaryColor = "#0000FF";
-const secondaryColor = "#00FF00";
-const textColor = "#FFFFFF";
+const colorStyles = {
+  blue: {
+    background: 'blue',
+    textColor: 'white',
+  },
+  gray: {
+    background: 'gray',
+    textColor: 'white',
+  },
+  green: {
+    background: 'green',
+    textColor: 'white',
+  },
+  red: {
+    background: 'red',
+    textColor: 'white',
+  },
+  gold: {
+    background: 'gold',
+    textColor: 'black',
+  },
+  azure: {
+    background: '#00ffff',
+    textColor: 'black',
+  },
+  white: {
+    background: 'white',
+    textColor: 'black',
+  },
+  black: {
+    background: 'black',
+    textColor: 'white',
+  },
+};
 
 export const StyledCardWrapper = styled.div`
-  background-color: ${primaryColor};
-  max-width: 18rem;
-  border: 5px red solid;
-  border-radius: 5px;
+  background-color: ${({ color }) => colorStyles[color]?.background || 'white'};
+  color: ${({ color }) => colorStyles[color]?.textColor || 'black'};
+  width: 300px;
+  margin: 16px;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 `;
 
-export const StyledCardHeaderContainer = styled.div`
-  background-color: ${primaryColor};
-`;
+export const StyledCardHeaderContainer = styled.div``;
 
 export const StyledCardHeader = styled.h5`
-  color: ${textColor};
+  margin-bottom: 8px;
+  font-size: 18px;
 `;
 
 export const StyledDivider = styled.div`
-  background-color: ${textColor};
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 16px 0;
 `;
 
-export const StyledCardContentContainer = styled.div`
-  background-color: ${primaryColor};
-`;
+export const StyledCardContentContainer = styled.div``;
 
 export const StyledCardContentHeader = styled.h4`
-  color: ${textColor};
+  margin-bottom: 8px;
+  font-size: 16px;
 `;
 
 export const StyledCardContentParagraph = styled.p`
-  color: ${textColor};
+  font-size: 14px;
 `;
