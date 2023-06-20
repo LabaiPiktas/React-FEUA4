@@ -7,6 +7,7 @@ import {
   StyledCardContentHeader,
   StyledCardContentParagraph,
 } from './style';
+import PropTypes from 'prop-types';
 
 const Card = ({ color }) => {
   let cardTitle = '';
@@ -75,6 +76,10 @@ const Card = ({ color }) => {
       </StyledCardContentContainer>
     </StyledCardWrapper>
   );
+};
+
+Card.propTypes = {
+  color: PropTypes.oneOf(['blue', 'gray', 'green', 'red', 'gold', 'azure', 'white', 'black']),
 };
 
 export default Card;
