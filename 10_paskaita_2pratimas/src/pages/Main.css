@@ -1,19 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+  font-family: 'Pacifico', cursive;
+}
+
+
 .hero {
-    position: relative; /* Set the container to position relative */
+    position: relative; 
   }
   
   .hero img {
     width: 100%;
-    height: auto;
+    height: 84vh;
+   
   }
   
   .hero-text {
-    position: absolute; /* Position the text element within the container */
-    top: 50%; /* Place the text at 50% from the top */
-    left: 50%; /* Place the text at 50% from the left */
-    transform: translate(-50%, -50%); /* Center the text using translate */
+    position: absolute; 
+    top: 10%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
     color: white;
     font-size: 32px;
     text-align: center;
   }
+
+  .hero-text-p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    display: block;
+    margin-top: 20px; /* Add a margin-top to create space below the heading */
+  }
+  
   

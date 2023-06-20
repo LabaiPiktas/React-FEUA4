@@ -44,6 +44,7 @@ export const updateUser = async (userId, updatedData) => {
     throw error;
   }
 };
+<<<<<<< HEAD
 
 // Retrieve all users
 export const getUsers = async () => {
@@ -99,3 +100,5 @@ export const deletePerson = async (personId) => {
     throw error;
   }
 };
+=======
+>>>>>>> c454a3bf461c29c4c4ad80a50385e064507697b5
